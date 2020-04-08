@@ -1,0 +1,26 @@
+a. List all the ACM members who also work in the office of the
+Representative
+SELECT MEMBERID, MEMBERNAME FROM ACM MEMBER WHERE REPRESENTATIVE WORKER =TRUE;
+
+b. List all the ACM members who also work in the office of the Chapter
+Coordinator
+SELECT MEMBERID, MEMBERNAME FROM ACM MEMBER WHERE CHAPTER COORDINATOR= TRUE;
+
+c. List all the members who live in Texas
+SELECT MEMBERID, MEMBERNAME FROM ACM MEMBER WHERE STATE = 'Texas' OR STATE = 'TX';
+
+d. List all the members who live in Texas and are Indians
+SELECT MEMBERID, MEMBERNAME FROM ACM MEMBER WHERE STATE = 'Texas' OR STATE = 'TX' AND TRIBE != NULL;
+
+e. List all the members who hold PhDs
+SELECT MEMBERID, MEMBERNAME FROM ACM MEMBER WHERE HIGHEST DEGREE EARNED = 'PHD' OR HIGHEST DEGREE EARNED = 'PHDs';
+
+f. List all the members who also hold youth membership
+SELECT MEMBERID, MEMBERNAME 
+
+g. List all the members between the ages of 18 and 35
+h. List all the members who are Americans
+i. List all the members who have a dual citizenship of America and South
+Sudan
+j. List all the members who join ACM in 2018
+k. Join several tables
