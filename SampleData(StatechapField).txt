@@ -1,0 +1,1 @@
+INSERT INTO `chapters`.`statechapter` (`name`, `type`, `coordinatorID`) VALUES ('Texas Veteran Chapter', 'Veteran', '0006');
