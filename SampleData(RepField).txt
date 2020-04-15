@@ -1,0 +1,1 @@
+INSERT INTO `chapters`.`representative` (`memberID`, `name`, `countryover`) VALUES ('0010', 'Jan Levingston', 'US');
