@@ -16,11 +16,29 @@ e. List all the members who hold PhDs
 SELECT MEMBERID, MEMBERNAME FROM ACM MEMBER WHERE HIGHEST DEGREE EARNED = 'PHD' OR HIGHEST DEGREE EARNED = 'PHDs';
 
 f. List all the members who also hold youth membership
-SELECT MEMBERID, MEMBERNAME 
+SELECT MEMBERID, MEMBERNAME
+FROM ACM MEMBER 
+WHERE SUBMEMBERSHIP = 'YOUTH';
 
 g. List all the members between the ages of 18 and 35
+SELECT MEMBERID, MEMBERNAME
+FROM ACM MEMBER
+WHERE AGE BETWEEN 18 AND 35;
+
 h. List all the members who are Americans
+SELECT MEMBERID, MEMBERNAME
+FROM ACM MEMBER
+WHERE CITIZENSHIP = 'US';
+
 i. List all the members who have a dual citizenship of America and South
 Sudan
+SELECT MEMBERID, MEMBERNAME
+FROM ACM MEMBER
+WHERE CITIZENSHIP = 'US' AND CITIZENSHIP = 'SS';
+
 j. List all the members who join ACM in 2018
+SELECT MEMBERID, MEMBERNAME
+FROM ACM MEMBER
+WHERE DATEJOINED = '2018';
+
 k. Join several tables
